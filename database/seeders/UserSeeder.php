@@ -13,31 +13,31 @@ class UserSeeder extends Seeder
      */
     public function run(): void
     {
-        DB::table('users')->insert([
-            [
-                'name' => 'Admin user',
-                'username' => 'adminuser',
-                'email' => 'admin@gmail.com',
-                'role' => 'admin',
-                'status' => 'active',
-                'password' => bcrypt('password')
-            ] ,
-            [
-                'name' => 'Vendor user',
-                'username' => 'vendoruser',
-                'email' => 'vendor@gmail.com',
-                'role' => 'vendor',
-                'status' => 'active',
-                'password' => bcrypt('password')
-            ] ,
-            [
-                'name' => 'user',
-                'username' => 'user',
-                'email' => 'user@gmail.com',
-                'role' => 'user',
-                'status' => 'active',
-                'password' => bcrypt('password')
-            ]
-            ]);
+        // DB::table('users')->insert([
+        //     [
+        //         'name' => 'Admin user',
+        //         'username' => 'adminuser',
+        //         'email' => 'admin@gmail.com',
+        //         'role' => 'admin',
+        //         'status' => 'active',
+        //         'password' => bcrypt('password')
+        //     ] ,
+        //     [
+        //         'name' => 'Vendor user',
+        //         'username' => 'vendoruser',
+        //         'email' => 'vendor@gmail.com',
+        //         'role' => 'vendor',
+        //         'status' => 'active',
+        //         'password' => bcrypt('password')
+        //     ] ,
+        //     [
+        //         'name' => 'user',
+        //         'username' => 'user',
+        //         'email' => 'user@gmail.com',
+        //         'role' => 'user',
+        //         'status' => 'active',
+        //         'password' => bcrypt('password')
+        //     ]
+        //     ]);
     }
 }
